@@ -1,0 +1,287 @@
+/*importar fuente didact gothic de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+html{
+    background: hsla(333.75, 65%, 81%, 1);
+    background: radial-gradient(circle, hsla(333.75, 65%, 81%, 1), hsla(212.471, 66%, 75%) 100%);
+    font-family: didact gothic;
+}
+h2{
+    color: hsla(0, 28%, 41%, 1);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#webdev{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 90px;
+    margin-right: 0px;
+    padding-top:100px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+#uxdesign{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 70px;
+    padding-top:100px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#frontend{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 90px;
+    margin-right: 0px;
+    padding-top:100px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#elisafer{
+    color: hsla(0, 49%, 63%, 1);
+    float: right;
+    width: 30%;
+    height: 90%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 70px;
+    padding-top:50px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#botonhome{
+    float: right;
+    width: 10%;
+    height: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 90px;
+    margin-right: 300px;
+    padding-top:100px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsla(0, 25%, 61%, 1);
+    background: hsla(0, 38%, 67%, 1);
+    background: linear-gradient( hsla(0, 38%, 67%, 1),  hsla(0, 12%, 66%, 1));
+    color: hsla(0, 28%, 41%, 1);
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#botonhome:hover{
+    background: hsla(0, 38%, 67%, 1);
+    background: linear-gradient( hsla(0, 12%, 66%, 1),  hsla(0, 38%, 67%, 1));
+    color: hsla(0, 27%, 92%, 1);
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsla(0, 25%, 61%, 1);
+    transition: 1s;
+}
+/*animation que suba el botonhome*/
+#botonhome, #uxdesign, #frontend, #webdev{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      margin-bottom: 100%;
+      height: 300%
+    }
+  
+    to {
+      margin-top: 0%;
+      height: 100%;
+    }
+  }
+
+  /*puntos de ruptura para movil de 392px x 852px*/
+    @media screen and (max-width: 393px) {
+        #botonhome{
+           float: right;
+            width: 10%;
+            height: 10%;
+            margin-left: 20px;
+            margin-right: 40%;
+            padding-top:30%;
+            padding-left:50%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px hsla(0, 25%, 61%, 1);
+            background: hsla(0, 38%, 67%, 1);
+            background: linear-gradient( hsla(0, 38%, 67%, 1),  hsla(0, 12%, 66%, 1));
+            color: hsla(0, 28%, 41%, 1);
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 30px 50px;
+        }
+        #botonhome:hover{
+            background: hsla(0, 38%, 67%, 1);
+            background: linear-gradient( hsla(0, 12%, 66%, 1),  hsla(0, 38%, 67%, 1));
+            color: hsla(0, 27%, 92%, 1);
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px hsla(0, 25%, 61%, 1);
+            transition: 1s;
+        }
+        #webdev{
+            float: left;
+            width: 30%;
+            height: 60%;
+        }
+        #uxdesign{
+            float: left;
+            width: 30%;
+            height: 60%;
+        }
+        #frontend{
+            float: left;
+            width: 30%;
+            height: 60%;
+            padding-bottom: 10%;
+        }
+        #elisafer{
+            float: right;
+            margin-bottom: -10%;
+        }
+
+    }
+    /*PARA IPHONE*/
+ /*punto de ruptura para tablet de 834px x 1194px*/
+    @media screen and (max-width: 835px) {
+        #botonhome{
+           float: right;
+            width: 10%;
+            height: 10%;
+            margin-left: 20px;
+            margin-right: 40%;
+            padding-top:30%;
+            padding-left:50%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px hsla(0, 25%, 61%, 1);
+            background: hsla(0, 38%, 67%, 1);
+            background: linear-gradient( hsla(0, 38%, 67%, 1),  hsla(0, 12%, 66%, 1));
+            color: hsla(0, 28%, 41%, 1);
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 30px 50px;
+        }
+        #botonhome:hover{
+            background: hsla(0, 38%, 67%, 1);
+            background: linear-gradient( hsla(0, 12%, 66%, 1),  hsla(0, 38%, 67%, 1));
+            color: hsla(0, 27%, 92%, 1);
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px hsla(0, 25%, 61%, 1);
+            transition: 1s;
+        }
+        #webdev{
+            float: left;
+            width: 30%;
+            height: 60%;
+        }
+        #uxdesign{
+            float: left;
+            width: 30%;
+            height: 60%;
+        }
+        #frontend{
+            float: left;
+            width: 30%;
+            height: 60%;
+            padding-bottom: 10%;
+        }
+        #elisafer{
+            float: right;
+            margin-bottom: -10%;
+        }
+
+    }
+    /*PARA IPAD*/
+    /*punto de ruptura para tablet de 320px x 490px*/
+    @media screen and (max-width: 321px) {
+        html{
+            font-size: 15px;
+        }
+        #botonhome{
+           float: right;
+            margin-left: 10px;
+            margin-right: 10%;
+            padding-top:30%;
+            padding-left:30%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px hsla(0, 25%, 61%, 1);
+            background: hsla(0, 38%, 67%, 1);
+            background: linear-gradient( hsla(0, 38%, 67%, 1),  hsla(0, 12%, 66%, 1));
+            color: hsla(0, 28%, 41%, 1);
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            justify-content: center;
+            padding: 30px 90px;
+        }
+        #botonhome:hover{
+            background: hsla(0, 38%, 67%, 1);
+            background: linear-gradient( hsla(0, 12%, 66%, 1),  hsla(0, 38%, 67%, 1));
+            color: hsla(0, 27%, 92%, 1);
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 30px 90px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px hsla(0, 25%, 61%, 1);
+            transition: 1s;
+        }
+        #webdev{
+            float: left;
+            font-size: 15px;
+        }
+        #uxdesign{
+            float: left;
+            font-size: 15px;
+        }
+        #frontend{
+            float: left;
+            font-size: 15px;;
+            padding-bottom: 10%;
+        }
+        #elisafer{
+            float: right;
+            font-size: 15px;
+            margin-top: -20%;
+        }
+
+    }
